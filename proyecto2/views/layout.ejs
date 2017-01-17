@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/docs/assets/css/docs.min.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/docs/examples/album/album.css">
+    <link rel="stylesheet" href="/styles/docs/examples/blog/blog.css">
+    <link rel="stylesheet" href="/styles/docs/examples/carousel/carousel.css">
+    <link rel="stylesheet" href="/styles/docs/examples/cover/cover.css">
+    <link rel="stylesheet" href="/styles/docs/examples/dashboard/dashboard.css">
+    <link rel="stylesheet" href="/styles/docs/examples/grid/grid.css">
+    <link rel="stylesheet" href="/styles/docs/examples/jumbotron/jumbotron.css">
+    <link rel="stylesheet" href="/styles/docs/examples/justified-nav/justified-nav.css">
+    <link rel="stylesheet" href="/styles/docs/examples/narrow-jumbotron/narrow-jumbotron.css">
+    <link rel="stylesheet" href="/styles/docs/examples/navbar-top-fixed/navbar-top-fixed.css">
+    <link rel="stylesheet" href="/styles/docs/examples/navbar-top/navbar-top.css">
+    <link rel="stylesheet" href="/styles/docs/examples/navbars/navbar.css">
+    <link rel="stylesheet" href="/styles/docs/examples/offcanvas/offcanvas.css">
+    <link rel="stylesheet" href="/styles/docs/examples/signin/signin.css">
+    <link rel="stylesheet" href="/styles/docs/examples/starter-template/starter-template.css">
+    <link rel="stylesheet" href="/styles/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css">
+    <link rel="stylesheet" href="/styles/docs/examples/sticky-footer/sticky-footer.css">
+    <link rel="stylesheet" href="/styles/docs/examples/tooltip-viewport/tooltip-viewport.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/js/tests/vendor/qunit.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+
+    <div class="">
+        <a href="/vista">Vista</a>
+        <a href="/">inicio</a>
+    </div>
+
+
+
+    <%- body %>
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
+        that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different template engine (handlebars, jade, dust, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    
+    <!--TEMPLATES END-->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
